@@ -6,64 +6,112 @@
   <title>Contact | Jarrod Costopulos</title>
 <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <!-- Latest compiled and minified CSS -->
+
+<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Jarrod Costopulos</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <nav class="navbar navbar-default topbar">
+	   <div class="container">
 
-  <div id="main-container" class="container">
-    <section class="main-section">
+          <a class="navbar-brand" id="logo" href="index.html">Jarrod Costopulos</a>
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		     </button>
+
+		     <div class="collapse navbar-collapse" id="navbar-collapse">
+      			<ul class="nav navbar-nav navbar-right mynav">
+        			<a class="navlinks" href="index.html"><li>About Me</li></a>
+        			<a class="navlinks" href="portfolio.html"><li>Portfolio</li></a>
+              <a class="navlinks" href="contact.html"><li>Contact</li></a>
+        		</ul>
+        </div>
+	   </div>
+	</nav>
+
+<div id="main-container" class="container container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+     <section class="container-fluid main-section">
+
       <h1>Contact</h1>
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name..." required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email..." required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
+<hr class="linebreak">
+
+    <form id="inputform">
+
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd">
+        </div>
+
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
 
     </section>
+  </div><!--end main-section column-->
 
-    <section class="sidebar">
-      <div id="connect">
-        <h2>Connect with Me</h2>
+  <div class="col-md-4"><!--start sidebar column-->
+    <section class="sidebar container-fluid">
 
-        <a href="https://github.com/DigitalTheorist"><img src="assets/images/github-128.png" class="social" alt="GitHub" /></a>
-        <a href="https://www.linkedin.com/in/jarrod-costopulos-91a071a/"><img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-        <a href="http://stackoverflow.com/users/7458645/jarrod-costopulos"><img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
-      </div>
+       <h2 class="text-center">Connect with Me</h2>
+
+      <hr class="linebreak">
+
+    <div class="row container-fluid icons"> <!--begin row connect social links-->
+      <div class="col-xs-4 container-fluid">
+         <a href="https://github.com/DigitalTheorist"><img src="assets/images/github-128.png" class="social img-responsive" alt="GitHub" /></a>
+       </div>
+
+       <div class="col-xs-4 container-fluid">
+         <a href="https://www.linkedin.com/in/jarrod-costopulos-91a071a/"><img src="assets/images/linkedin-128.png" class="social img-responsive" alt="LinkedIn" /></a>
+       </div>
+
+       <div class="col-xs-4 container-fluid">
+         <a href="http://stackoverflow.com/users/7458645/jarrod-costopulos"><img src="assets/images/stackoverflow-128.png" class="social img-responsive"alt="Stack Overflow" /></a>
+       </div>
+     </div><!--end ROW - connect social links -->
     </section>
   </div>
+</div>
 
-  <footer>
-    <div class="container">
-      Copyright &copy; 2016 Jarrod Costopulos
-    </div>
-  </footer>
+<footer>
+<div class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container text-center">
+    <p class="navbar-text col-md-12 col-sm-12 and col-xs-12">&copy; Copyright 2017 Jarrod Costopulos</p>
+  </div>
+
+</div>
+</footer>
+
+<!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Bootstrap JavaScript CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
